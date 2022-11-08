@@ -1,1 +1,1 @@
-# C algorithm and data structure
+# C++ algorithm and data structure 
