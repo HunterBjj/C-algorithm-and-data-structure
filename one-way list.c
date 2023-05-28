@@ -17,7 +17,7 @@ void init(linked_list *l) {
     l->tail = NULL;
 }
 
-push_front(linked_list *l, int value) {
+int push_front(linked_list *l, int value) {
     node *tmp = malloc(sizeof(node));
     tmp->value = value;
     if(l->tail == NULL) {
@@ -33,6 +33,21 @@ push_front(linked_list *l, int value) {
     return 1;
 }
 
+void print(linked_list *l) {
+    node* temp;
+    temp = l->head;
+    while(temp != NULL) {
+        printf("%d", temp->value);
+        if(temp != NULL)
+            printf(" ";)
+    }
+    printf("\n");
+
+}
+
+int pop(linked_list *l, int value) {
+
+}
 
 
 int main()
