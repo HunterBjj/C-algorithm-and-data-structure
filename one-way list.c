@@ -34,8 +34,8 @@ int push_front(linked_list *l, int value) {
 }
 
 void print(linked_list *l) {
-    node* tmp;
-    tmp = l->head;
+    
+    node* tmp = l->head;
     while(tmp != NULL) {
         printf("%d", tmp->value);
         if(tmp != NULL)
@@ -46,13 +46,14 @@ void print(linked_list *l) {
 }
 
 int pop(linked_list *l) {
-    node* tmp;
-    tmp = l->head;
-    if(l->tail != NULL)
+ 
+    node* tmp = l->head;
+    if(l->head != tmp->NULL)
     {
         l->head = tmp->next;
+        tmp->value = value;
         free(tmp);
-        return 0;    
+        return value;    
     }
     
     return 1;
